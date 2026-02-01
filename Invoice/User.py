@@ -36,5 +36,8 @@ class User():
     def deactivate_user(self):
         self.is_active = False
         pass
+    
+    def user_email_verified(self):
+        pass
 
 new_user = User(1, "John", "Doe", "john.doe@example.com", "123-456-7890", True, "2023-01-01", "2023-01-01")
