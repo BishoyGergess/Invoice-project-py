@@ -15,23 +15,28 @@ class InvoiceRow():
         self.item_name = item_name
         self.quantity = quantity
         self.unit_price = unit_price
-        self.total_price = self.amount()
+        self.total_price = total_price
         self.invoice_id = invoice_id
         self.created_at = created_at
         self.updated_at = updated_at
         self.deleted_at = deleted_at
+        
     def create_invoice_row(self):
         # Logic to create a new invoice row in the database
         pass
+    
     def get_invoice_row(self, id):
         # Logic to retrieve an invoice row from the database by id
         pass
+    
     def update_invoice_row(self):
         # Logic to update an existing invoice row in the database
         pass
+    
     def delete_invoice_row(self, id):
         # Logic to delete an invoice row from the database by id
         pass
+    
     def amount(self):
         return self.quantity * self.unit_price
 
