@@ -1711,7 +1711,7 @@
 											"top": 270,
 											"width": 167,
 											"height": 13,
-											"text": "+email_verified: Boolean",
+											"text": "+user_email_verified",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3076,7 +3076,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGcFT/AQJKi+10="
 							},
-							"name": "total_price"
+							"name": "total_price",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3093,7 +3094,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGcFT/AQJKi+10="
 							},
-							"name": "created_at"
+							"name": "created_at",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3101,7 +3103,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGcFT/AQJKi+10="
 							},
-							"name": "updated_at"
+							"name": "updated_at",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3109,7 +3112,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGcFT/AQJKi+10="
 							},
-							"name": "deleted_at"
+							"name": "deleted_at",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -3637,8 +3641,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGcFVx8jpupaDM="
 							},
-							"name": "email_verified",
-							"type": "Boolean"
+							"name": "user_email_verified"
 						}
 					],
 					"operations": [
