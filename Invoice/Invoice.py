@@ -10,12 +10,15 @@ class Invoice():
     total = 0.0
     user_id = None
     contact_id = None
+    term_id = {}
     created_at = None
     updated_at = None
     deleted_at = None
     
     def __init__(self, id, invoice_number, invoice_date, invoice_due_date,
-                 subtotal, discount, sales_tax, total, user_id, contact_id, created_at=None, updated_at=None, deleted_at=None):
+                 subtotal, discount, sales_tax, total, user_id, contact_id,
+                 term_id=None, created_at=None, updated_at=None, deleted_at=None):
+        
         self.id = id
         self.invoice_number = invoice_number
         self.invoice_date = invoice_date
@@ -26,6 +29,7 @@ class Invoice():
         self.total = total
         self.user_id = user_id
         self.contact_id = contact_id
+        self.term_id = term_id
         self.created_at = created_at
         self.updated_at = updated_at
         self.deleted_at = deleted_at
@@ -51,7 +55,9 @@ class Invoice():
         pass
     
     def invoice_total(self):
+        
         if self.discount != 0:
             return self.subtotal - self.discount + self.sales_tax
         else:
             return self.subtotal + self.sales_tax
+
